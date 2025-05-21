@@ -52,7 +52,7 @@
         v-for="project in filteredProjects"
         :key="project.title"
       >
-        <ProjectCard :project="project" />
+        <Projectcard :project="project" />
       </div>
     </div>
   </main>
@@ -60,12 +60,12 @@
 
 <script>
 import projects from '@/data/projects.js'
-import ProjectCard from '@/components/ProjectCard.vue'
+import Projectcard from '@/components/Projectcard.vue'
 
 export default {
   name: 'ProjectenView',
   components: {
-    ProjectCard
+    Projectcard
   },
   data() {
     return {

@@ -37,7 +37,7 @@
 
     <div class="container">
     <section id="home-projecten">
-      <ProjectCard
+      <Projectcard
         v-for="(project, index) in featuredProjects"
         :key="index"
         :project="project"
@@ -56,13 +56,13 @@
 <script>
 import { RouterLink } from 'vue-router'
 import projects from '@/data/projects.js'
-import ProjectCard from '@/components/ProjectCard.vue'
+import Projectcard from '@/components/Projectcard.vue'
 
 export default {
   name: 'HomeView',
   components: {
     RouterLink,
-    ProjectCard
+    Projectcard
   },
   data() {
     return {
