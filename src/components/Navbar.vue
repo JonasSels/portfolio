@@ -23,7 +23,7 @@
 import { RouterLink } from 'vue-router'
 
 export default {
-  name: 'NavBar',
+  name: 'Navbar',
   components: {
     RouterLink
   },
