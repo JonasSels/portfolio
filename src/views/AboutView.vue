@@ -179,6 +179,8 @@ main .about .about-tekst {
 
 main .about .about-tekst h2 {
   margin-bottom: 2rem;
+  text-decoration-line: underline;
+  text-decoration-color: #F6C985;
 }
 
 main .about .about-tekst p {

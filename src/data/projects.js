@@ -28,6 +28,7 @@ import brandBag from '@/assets/images/brand-bag.png'
 import brandCard from '@/assets/images/brand-card.png'
 import brandSticker from '@/assets/images/brand-sticker.png'
 import brandbook from '@/assets/pdf/Personal-brand.pdf'
+import brandbookTolbo from '@/assets/pdf/Brandbook-TolBo.pdf'
 
 export default [
   {
@@ -62,7 +63,11 @@ export default [
     category: "werkplekleren 2",
     image: tolboHome,
     images: [tolboPhone, tolboInfog, tolboPost1, tolboPost2],
-    slug: "tolbo"
+    slug: "tolbo",
+    resources: [
+      { label: 'Download brandbook', file: brandbookTolbo, type: 'download' },
+      { label: 'Bekijk website prototype', file: 'https://www.figma.com/proto/3gE7LNtFYD8asKmyRJJqAV/VISUALS?node-id=607-9209&viewport=1078%2C3794%2C0.33&t=jvbAx3Y30q9csMms-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=607%3A9209&show-proto-sidebar=1', type: 'link' },
+    ]
   },
   {
     title: "Synthwreck",

@@ -13,7 +13,18 @@
         <li><RouterLink to="/" exact-active-class="active">Home</RouterLink></li>
         <li><RouterLink to="/about" exact-active-class="active">Over mij</RouterLink></li>
         <li><RouterLink to="/projecten" exact-active-class="active">Projecten</RouterLink></li>
-        <li><RouterLink to="/contact" exact-active-class="active">Contact</RouterLink></li>
+
+        <li class="contact-desktop">
+          <div class="button">
+            <RouterLink to="/contact">Contacteer mij</RouterLink>
+          </div>
+        </li>
+
+
+        <!-- Mobiele tekstlink -->
+        <li class="contact-mobile">
+          <RouterLink to="/contact" exact-active-class="active">Contacteer mij</RouterLink>
+        </li>
       </ul>
     </div>
   </nav>
@@ -120,6 +131,35 @@ nav .nav-container h1 a {
 
 .nav-links li a.active {
   border-bottom: 2px solid white;
+}
+
+.contact-desktop {
+  display: block;
+
+  button {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  a {
+    color: #754A38 !important;
+  }
+}
+
+.contact-mobile {
+  display: none;
+}
+
+
+/* Enkel op mobiel: toon tekstlink, verberg knop */
+@media (max-width: 700px) {
+  .contact-desktop {
+    display: none;
+  }
+
+  .contact-mobile {
+    display: block;
+  }
 }
 
 /* Responsive */
