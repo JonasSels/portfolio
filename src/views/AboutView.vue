@@ -18,12 +18,13 @@
     <div class="skills-carousel-wrapper">
       <div class="skills-carousel">
         <div class="skills-track">
-          <div class="skill" v-for="icon in icons" :key="icon.src">
-            <img :src="`../src/assets/images/${icon.src}`" :alt="icon.name + '-icon'" />
+          <div class="skill" v-for="icon in icons" :key="icon.name">
+            <img :src="icon.src" :alt="`${icon.name}-icon`" />
             <p>{{ icon.name }}</p>
           </div>
-          <div class="skill" v-for="icon in icons" :key="'clone-' + icon.src">
-            <img :src="`../src/assets/images/${icon.src}`" :alt="icon.name + '-icon-clone'" />
+          <!-- Dubbele icons voor oneindig scroll-effect -->
+          <div class="skill" v-for="icon in icons" :key="`clone-${icon.name}`">
+            <img :src="icon.src" :alt="`${icon.name}-icon-clone`" />
             <p>{{ icon.name }}</p>
           </div>
         </div>
@@ -118,25 +119,34 @@
 </template>
 
 <script>
-import cv from '@/assets/pdf/JonasSels_cv.pdf'
+import cv from '@/assets/pdf/JonasSels_cv.pdf';
+import cssIcon from '@/assets/images/css.png';
+import htmlIcon from '@/assets/images/html.png';
+import photoshopIcon from '@/assets/images/photoshop.png';
+import illustratorIcon from '@/assets/images/illustrator.png';
+import indesignIcon from '@/assets/images/indesign.png';
+import figmaIcon from '@/assets/images/figma.png';
+import vueIcon from '@/assets/images/vue.png';
+
 export default {
   name: 'AboutView',
   data() {
     return {
       cv: cv,
       icons: [
-        { src: 'css.png', name: 'CSS' },
-        { src: 'html.png', name: 'HTML' },
-        { src: 'photoshop.png', name: 'Photoshop' },
-        { src: 'illustrator.png', name: 'Illustrator' },
-        { src: 'indesign.png', name: 'InDesign' },
-        { src: 'figma.png', name: 'Figma' },
-        { src: 'vue.png', name: 'Vue.js' }
+        { src: cssIcon, name: 'CSS' },
+        { src: htmlIcon, name: 'HTML' },
+        { src: photoshopIcon, name: 'Photoshop' },
+        { src: illustratorIcon, name: 'Illustrator' },
+        { src: indesignIcon, name: 'InDesign' },
+        { src: figmaIcon, name: 'Figma' },
+        { src: vueIcon, name: 'Vue.js' }
       ]
-    }
+    };
   }
-}
+};
 </script>
+
 
 <style scoped>
 .tijdlijn-top a {
