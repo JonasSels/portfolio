@@ -16,7 +16,7 @@
 
       <section class="contact-form">
         <h1>Contactformulier</h1>
-        <form action="mailto:jonas.sels@hotmail.com" method="POST" enctype="text/plain">
+        <form action="https://formspree.io/f/xgvkbljb" method="POST">
           <div class="form-group">
             <label for="voornaam">Voornaam:</label>
             <input type="text" id="voornaam" name="voornaam" required />
@@ -31,7 +31,7 @@
           </div>
           <div class="form-group">
             <label for="telefoonnummer">Telefoonnummer:</label>
-            <input type="tel" id="telefoonnummer" name="telefoonnummer" required />
+            <input type="tel" id="telefoonnummer" name="telefoonnummer"/>
           </div>
           <div class="form-group">
             <label for="bericht">Bericht:</label>
