@@ -19,11 +19,11 @@
       <div class="skills-carousel">
         <div class="skills-track">
           <div class="skill" v-for="icon in icons" :key="icon.src">
-            <img :src="`/src/assets/images/${icon.src}`" :alt="icon.name + '-icon'" />
+            <img :src="`../src/assets/images/${icon.src}`" :alt="icon.name + '-icon'" />
             <p>{{ icon.name }}</p>
           </div>
           <div class="skill" v-for="icon in icons" :key="'clone-' + icon.src">
-            <img :src="`/src/assets/images/${icon.src}`" :alt="icon.name + '-icon-clone'" />
+            <img :src="`../src/assets/images/${icon.src}`" :alt="icon.name + '-icon-clone'" />
             <p>{{ icon.name }}</p>
           </div>
         </div>
