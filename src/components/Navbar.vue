@@ -181,8 +181,9 @@ nav .nav-container h1 a {
     background-color: #364C49;
     padding-top: 1.5rem;
     position: absolute;
-    top: 5rem;
+    top: 4.9rem;
     left: 0;
+    padding-left: unset;
   }
 
   .nav-links.show {
@@ -193,6 +194,10 @@ nav .nav-container h1 a {
     margin: 1.5rem 0;
     width: 100%;
     text-align: center;
+  }
+
+  .nav-links ul {
+    display: flex;
   }
 }
 </style>

@@ -317,6 +317,7 @@ main .knop-tijdlijn-container-12 { top: 100%; }
   border-radius: 50%;
   background-color: #FFF;
   border: 5px solid #3D877F;
+  padding-top: 1rem;
   color: #3D877F;
   display: flex;
   flex-wrap: wrap;
@@ -388,6 +389,7 @@ main .about article.about-tekst img {
   main .about .about-tekst {
     margin: 2rem auto;
     width: 100%;
+    padding: unset;
   }
   main .tijdlijn {
     margin: 5rem auto 15rem auto;
