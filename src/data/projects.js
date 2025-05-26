@@ -29,6 +29,8 @@ import brandCard from '@/assets/images/brand-card.png'
 import brandSticker from '@/assets/images/brand-sticker.png'
 import brandbook from '@/assets/pdf/Personal-brand.pdf'
 import brandbookTolbo from '@/assets/pdf/Brandbook-TolBo.pdf'
+import eindreflectieWPL2 from '@/assets/pdf/Jonas_Sels_Eindreflectie_WPL2.pdf'
+import eindreflectieImage from '@/assets/images/eindreflectie-wpl2.png'
 
 export default [
   {
@@ -157,7 +159,7 @@ export default [
     ]
   },
   {
-    title: "Eindreflectie",
+    title: "Eindreflectie WPL1",
     description: "Tijdens Werkplekleren 1 kreeg ik de kans om mezelf zowel op professioneel als persoonlijk vlak te ontwikkelen. Het vak heeft me waardevolle inzichten gegeven in verschillende aspecten van mijn werk en mijn persoonlijke groei. In deze reflectie zal ik ingaan op wat ik heb geleerd op organisatorisch, persoonlijk en technisch vlak, hoe ik mezelf heb zien groeien, welke kwaliteiten van pas kwamen, welke ik verder wil ontwikkelen, en waar ik nog extra informatie over wens te verkrijgen.",
     category: "Werkplekleren",
     link: "projecten/eindreflectie.html",
@@ -165,6 +167,17 @@ export default [
     slug: "eindreflectie-wpl1",
     resources: [
       { label: 'Download eindreflectie', file: eindreflectie, type: 'download' },
+    ]
+  },
+  {
+    title: "Eindreflectie WPL2",
+    description: "Tijdens Werkplekleren 2 kreeg ik de kans om mijn professionele vaardigheden verder aan te scherpen en mezelf beter te leren kennen als toekomstig werknemer. Dit project bood niet alleen inhoudelijke verdieping, maar daagde me ook uit op technisch en organisatorisch vlak. In deze reflectie ga ik dieper in op de belangrijkste inzichten die ik heb opgedaan: wat ik technisch bijleerde, hoe ik ben gegroeid in teamwerking en verantwoordelijkheid, welke kwaliteiten ik heb ingezet en verder wil ontwikkelen, en hoe deze ervaring mijn motivatie en passie voor het vak heeft versterkt.",
+    category: "Werkplekleren 2",
+    link: "projecten/eindreflectie.html",
+    image: eindreflectieImage,
+    slug: "eindreflectie-wpl2",
+    resources: [
+      { label: 'Download eindreflectie', file: eindreflectieWPL2, type: 'download' },
     ]
   }
 ]
